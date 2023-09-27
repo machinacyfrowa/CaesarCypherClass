@@ -39,7 +39,9 @@ namespace CaesarCypherClass
         public static string EncryptV2(string inputText) 
         {
             char[] chars = { 'A', 'Ą', 'B', 'C', 'Ć', 'D', 'E', 'Ę', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'Ł', 'M', 'N', 'Ń', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'Ś', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ż', 'Ź' };
-
+            
+            //zmieniamy wszystkie litery na wielkie
+            inputText = inputText.ToUpper();
 
             string outputText = String.Empty;
 
